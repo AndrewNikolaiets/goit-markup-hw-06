@@ -492,30 +492,54 @@
         </button>
         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <input
-            type="text"
-            class="modal-input"
-            name="user-name"
-            placeholder="Имя"
-          />
-          <input
-            type="tel"
-            class="modal-input"
-            name="user-tel"
-            placeholder="Телефон"
-          />
-          <input
-            type="email"
-            class="modal-input"
-            name="user-email"
-            placeholder="Почта"
-          />
-          <input
-            type="text"
-            class="modal-input"
-            name="user-coment"
-            placeholder="Введите текст"
-          />
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Имя</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Имя"
+              id="user-name"
+            />
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Телефон</label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder="Телефон"
+              id="user-tel"
+            />
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Почта</label>
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder="Почта"
+              id="user-email"
+            />
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label for="user-coment" class="modal-label">Комментарий</label>
+            <textarea
+              name="user-coment"
+              id="user-coment"
+              class="modal-coment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
           <button type="submit">Отправить</button>
         </form>
       </div>
