@@ -481,7 +481,7 @@
         </div>
         <div class="footer-emeil">
           <p class="footer-soc-text">Подпишитесь на рассылку</p>
-          <div class="email-btn">
+          <form class="email-btn">
             <input
               type="emeil"
               class="footer-imput"
@@ -489,30 +489,23 @@
               placeholder="E-mail"
               id="footer-emeil"
             />
-            <div class="email-btn-icon">
+            <button type="submit" class="footer-emeil-btn">
+              Подписаться
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
-              <button type="submit" class="footer-emeil-btn">
-                Подписаться
-              </button>
-            </div>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-cloce-btn">
-          <span class="">
-            <svg class="modal-cloce" width="" height="">
-              <use
-                href="./images/symbol-defs.svg#icon-close-buttom"
-                data-modal-close
-              ></use>
-            </svg>
-          </span>
+        <button type="button" class="modal-cloce-btn" data-modal-close>
+          <svg class="modal-cloce" width="" height="">
+            <use href="./images/symbol-defs.svg#icon-close-buttom"></use>
+          </svg>
         </button>
         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
         <form>
